@@ -11,10 +11,14 @@ To install this plugin, you can use your favorite Neovim package manager. For ex
 ### [lazy](https://github.com/folke/lazy.nvim) (recommended)
 
 ```lua
-{
-  "https://github.com/hoangnghiem/nvim-scratch",
-  lazy = true,
-}
+  {
+    "hoangnghiem/nvim-scratch",
+    lazy = true,
+    dependencies = {
+      { "nvim-lua/plenary.nvim" },
+      { "MunifTanjim/nui.nvim" },
+    },
+  },
 ```
 
 ## Usage
